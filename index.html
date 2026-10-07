@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patuti Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <div id="ui-bar">
+            <div id="hearts-container"></div>
+            <div id="prompt-text">Press Play to start!</div>
+        </div>
+
+        <img src="moves/area.png" id="platform-img" alt="Floating Platform">
+        <img src="moves/idle-1.png" id="player">
+
+        <div id="start-overlay">
+            <h1 id="start-title">PATUTI</h1>
+            <button id="play-btn">Play</button>
+        </div>
+
+        <div id="game-overlay" class="hidden">
+            <h1 id="overlay-msg">GAME OVER</h1>
+            <button id="reset-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
